@@ -285,7 +285,7 @@ switch (true) {
 
 /*************************************************
 functions
-*/
+
 
 //function calculateAge(birthYear) {
 //    return 2018- birthYear;
@@ -323,42 +323,94 @@ var whatDoYouDo = function(job, firstName){
     
 }
     console.log(whatDoYouDo('teacher', 'John'));
+*/
+
+/**********************************
+
+var names = ['John', 'Mark', 'Jane'];
+var years = new Array(1990, 1969, 1948);
+
+console.log(names[0]);
+console.log(names.length);
+
+names[1] = 'Ben';
+names[names.length] = 'Mary'
+console.log(names)
+
+//different data types
+var john = ['John', 'Smith', 1990, 'teacher', false];
+
+john.push('blue');
+john.unshift('Mr');
+john.pop();
+john.shift();
+console.log(john)
+
+console.log(john.indexOf(1990));
+
+var isDesigner = john.indexOf('designer') === -1 ? 'John is not a designer' : 'John is a designer'
+console.log(isDesigner)
+arrays
+*/
+/********************************
+coding challenge 3
+*/
+//
+//function tipCalculator(bills) {
+//    var percentage;
+//    if (bills < 50) {
+//        percentage = .2
+//       
+//    } else if (bills >= 50 && bills <= 200) {
+//        percentage = .15
+//        
+//    } else {
+//        percentage = .1     
+//    }
+//  return percentage * bills;
+//}
+//
+//var bills = [124, 48, 268]
+//var tip = [tipCalculator(bills[0]), tipCalculator(bills[1]), tipCalculator(bills[2])];
+//var finalValues = [bills[0] + tip[0], bills[1] + tip[1], bills[2] + tip[2]]
+//console.log('The amount of tips is: $' + tip + '. The final bills are: $' + finalValues);
 
 
+/*******************************
+objects and properties
 
 
+//object literal 
+var john = {
+    firstName: 'John',
+    lastName: 'Smith',
+    birthYear: 1990,
+    family: ['Jane', 'Mark', 'Bob', 'Emily'],
+    job: 'teacher',
+    isMarried: false
+};
+//using dot notation
+console.log(john.firstName);
 
+//using key name
+console.log(john['lastName']);
 
+var x = 'birthYear';
+console.log(john[x]);
 
+//mutate data
+john.job = 'designer';
+john['isMarried'] = true;
+console.log(john);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//new object syntax
+var jane = new Object();
+jane.name = 'Jane';
+jane.birthYear = 1969;
+jane['lastName'] = 'Smith';
+console.log(jane);
+*/
+  
 
 
 
